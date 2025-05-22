@@ -7,6 +7,6 @@ images:
     newName: harbor-uqi.boer.id/ci-cd/flask-crud
     newTag: 11-dev
 
-patchesStrategicMerge:
+patches:
   - patch/deployment-patch-pvc.yaml
   - patch/replicas.yaml
