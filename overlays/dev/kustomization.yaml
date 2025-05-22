@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+  - pvc.yaml
+
+images:
+  - name: dummy
+    newName: <IMAGE>
+    newTag: <TAG>
+
+patchesStrategicMerge:
+  - patch/deployment-patch-pvc.yaml
+  - patch/replicas.yaml
