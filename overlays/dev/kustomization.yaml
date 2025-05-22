@@ -4,8 +4,8 @@ resources:
 
 images:
   - name: dummy
-    newName: <IMAGE>
-    newTag: <TAG>
+    newName: harbor-uqi.boer.id/ci-cd/flask-crud
+    newTag: 5
 
 patchesStrategicMerge:
   - patch/deployment-patch-pvc.yaml
