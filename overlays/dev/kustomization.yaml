@@ -8,5 +8,5 @@ images:
     newTag: 11-dev
 
 patches:
-  - patch/deployment-patch-pvc.yaml
-  - patch/replicas.yaml
+  - path: patch/deployment-patch-pvc.yaml
+  - path: patch/replicas.yaml
