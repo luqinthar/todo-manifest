@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: crud-flask
-  name: crud-flask
+    app: flask-crud
+  name: flask-crud
 spec:
   replicas: 3

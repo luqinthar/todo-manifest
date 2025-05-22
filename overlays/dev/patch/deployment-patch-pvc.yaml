@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: crud-flask
+  name: flask-crud
 spec:
   template:
     spec:
       containers:
-      - name: crud-flask
+      - name: flask-crud
         volumeMounts:
         - name: db-storage
           mountPath: /data
       volumes:
       - name: db-storage
         persistentVolumeClaim:
-          claimName: crud-flask-pvc
+          claimName: flask-crud-pvc
