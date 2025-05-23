@@ -9,5 +9,4 @@ images:
 
 patches:
   - path: patch/deployment-patch-pvc.yaml
-  - path: patch/replicas.yaml
   - path: patch/nodeport.yaml
