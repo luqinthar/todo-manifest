@@ -9,4 +9,13 @@ images:
 
 patchesStrategicMerge:
   - patch/deployment-patch-pvc.yaml
-#  - patch/replicas.yaml
+
+configMapGenerator:
+- name: todo-app-config
+  envs:
+  - config/config.env
+
+secretGenerator:
+- name: todo-app-secret
+  envs:
+  - secret/secret.env
