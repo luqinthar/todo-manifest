@@ -5,7 +5,7 @@ resources:
 images:
   - name: dummy
     newName: harbor-uqi.boer.id/ci-cd/flask-crud
-    newTag: 1-prod
+    newTag: 2-prod
 
 patches:
   - path: patch/deployment-patch.yaml
