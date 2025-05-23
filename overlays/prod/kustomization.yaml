@@ -7,8 +7,9 @@ images:
     newName: harbor-uqi.boer.id/ci-cd/flask-crud
     newTag: 1-prod
 
-patchesStrategicMerge:
-  - patch/deployment-patch-pvc.yaml
+patches:
+  - path: patch/deployment-patch.yaml
+  - path: patch/deployment-db-patch.yaml
 
 configMapGenerator:
 - name: todo-app-config
