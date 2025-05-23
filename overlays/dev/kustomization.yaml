@@ -5,7 +5,7 @@ resources:
 images:
   - name: dummy
     newName: harbor-uqi.boer.id/ci-cd/flask-crud
-    newTag: 11-dev
+    newTag: 12-dev
 
 patches:
   - path: patch/deployment-patch-pvc.yaml
