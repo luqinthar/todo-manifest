@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-app-db
+spec:
+  template:
+    spec:
+      volumes:
+      - name: todo-app-pvc
+        persistentVolumeClaim:
+          claimName: todo-app-pvc
+      containers:
+      - name: mysql
+        volumeMounts:
+        - name: todo-app-pvc
+          mountPath: /var/lib/mysql

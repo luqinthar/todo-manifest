@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+  - pvc.yaml
+
+images:
+  - name: dummy
+    newName: harbor-uqi.boer.id/ci-cd/flask-crud
+    newTag: 7
+
+patchesStrategicMerge:
+  - patch/deployment-patch-pvc.yaml
+#  - patch/replicas.yaml
