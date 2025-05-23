@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-app
-  labels:
-    app: todo-app
+  name: todo-app-db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: todo-app
+      app: todo-app-db
   template:
     metadata:
       labels:
-        app: todo-app
+        app: todo-app-db
     spec:
       containers:
-      - name: todo-app
-        image: dummy
+      - name: mysql
+        image: mysql:8
         ports:
-        - containerPort: 5000
+        - containerPort: 3306
