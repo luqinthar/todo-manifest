@@ -10,6 +10,7 @@ images:
 patches:
   - path: patch/deployment-patch.yaml
   - path: patch/deployment-db-patch.yaml
+  - path: patch/nodeport.yaml
 
 configMapGenerator:
 - name: todo-app-config
